@@ -1,0 +1,44 @@
+{
+  "buildSummary": {
+    "application": "test",
+    "environment": "dev",
+    "buildUser": "schaitanya@gmail.com",
+    "iacBuildToolVersion": "0.11.14",
+    "buildStatus": "passed"
+  },
+  "stageSummary": [
+    {
+      "stageName": "founational",
+      "preScan": "passed",
+      "postScan": "failure",
+      "buildStatus": "passed"
+    },
+    {
+      "stageName": "appinfra",
+      "preScan": "passed",
+      "postScan": "failure",
+      "buildStatus": "passed"
+    }
+  ],
+  "resourceSummary": [
+    "Passed - arn:aws:events:us-west-1:563423426478:rule/dev-test-app - <reason>",
+    "Failed - arn:aws:sns:us-west-1:563423426478:rule/dev-test-app - <reason>"
+  ],
+  "rulesSummary": [
+    "Lambda Function Tagging Invalid Application ID",
+    "Lambda Function Tagging Non Compliant",
+    "Lambda Function Using Default Security Group",
+    "Lambda Function Using KMS Key Of Another Application",
+    "Lambda Function Using Security Group Of Another Application",
+    "Lambda Function Without VPC Configuration",
+    "Route53 Hosted Zone Tagging Invalid Application ID",
+    "Route53 Hosted Zone Tagging Non Compliant",
+    "Step Functions State Machine Tagging Invalid Application ID",
+    "Step Functions State Machine Tagging Non Compliant"
+  ],
+  "complianceScanSummary": {
+    "rulesRun" : 10,
+    "resourcesScanned" : 20,
+    "resourceFailed" : 10
+  }
+}
